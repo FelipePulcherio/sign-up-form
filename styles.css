@@ -19,3 +19,8 @@ aside, .right {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+
+aside {
+  color: rgb(255, 255, 255);
+  background: center / cover no-repeat url(./images/andy-holmes-LUpDjlJv4_c-unsplash.jpg);
+}
