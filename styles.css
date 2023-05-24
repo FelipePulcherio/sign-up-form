@@ -2,4 +2,10 @@
 
 * {
     border: solid black 1px;
-  }
+}
+
+html {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
