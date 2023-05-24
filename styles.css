@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
 /** {
   border: solid black 1px;
 }*/
 
 html {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: Michroma, 'Trebuchet MS', sans-serif;
   font-size: 10px;
 }
 
@@ -51,18 +52,69 @@ aside > div > a {
 }
 
 .right {
-  background-color: rgb(255, 255, 255);
-  width: min(600px, 65vw)
+  background-color: rgb(233, 240, 255);
+  width: min(700px, 65vw)
 }
 
+
 header > p {
-  font-size: clamp(1.2rem, 1.2rem + .5vw, 2rem);
-  line-height: clamp(1.6rem, 1.6rem + .5vw, 3rem);
-  margin: 0 2.5rem;
+  font-size: clamp(1.5rem, 1.5rem + .5vw, 2rem);
+  line-height: clamp(1.9rem, 1.9rem + .5vw, 3rem);
+  margin: 0.8rem 5rem 0 3rem;
   padding: 0;
 }
 
 header > p:last-child {
-  margin-top: 2.5rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 .6rem .6rem rgb(173, 178, 190);;
+}
+
+form {
+  margin: 1.8rem 3rem;
+  padding: 0;
+}
+
+form > h2 {
+  font-size: clamp(1.5rem, 1.5rem + .5vw, 2rem);
+  line-height: clamp(1.9rem, 1.9rem + .5vw, 3rem);
+  margin-bottom: 2.5rem;
+  padding: 0;
+}
+
+form > section {
+  display: flex;
+  justify-content: start;
+  align-content: space-between;
+  margin-top: 1.5rem;
+  gap: 8rem;
+}
+
+section > div {
+  width: max(200px, 20vw);
+}
+
+div > label {
+  display: block;
+  font-size: clamp(1rem, 1rem + .15vw, 1.5rem);
+  line-height: clamp(1.4rem, 1.4rem + .15vw, 2.5rem);
+  margin-bottom: .3rem;
+}
+
+div > input {
+  width: 100%;
+}
+
+div > .error {
+  margin-top: .15rem;
+  opacity: 1;
+}
+
+.button {
+  background-color: rgb(233, 240, 255);
+  margin-top: 3rem;
 }
