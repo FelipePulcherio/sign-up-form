@@ -20,10 +20,11 @@ aside, .right {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 aside {
+  justify-content: space-between;
   text-align: center;
   color: rgb(255, 255, 255);
   background: center / cover no-repeat url(./images/andy-holmes-LUpDjlJv4_c-unsplash.jpg);
@@ -47,4 +48,21 @@ aside > div {
 
 aside > div > a {
   color: black;
+}
+
+.right {
+  background-color: rgb(255, 255, 255);
+  width: min(600px, 65vw)
+}
+
+header > p {
+  font-size: clamp(1.2rem, 1.2rem + .5vw, 2rem);
+  line-height: clamp(1.6rem, 1.6rem + .5vw, 3rem);
+  margin: 0 2.5rem;
+  padding: 0;
+}
+
+header > p:last-child {
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
 }
