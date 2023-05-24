@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-* {
+/** {
   border: solid black 1px;
-}
+}*/
 
 html {
   font-family: 'Trebuchet MS', sans-serif;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 body {
   display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 aside, .right {
@@ -21,6 +23,27 @@ aside, .right {
 }
 
 aside {
+  text-align: center;
   color: rgb(255, 255, 255);
   background: center / cover no-repeat url(./images/andy-holmes-LUpDjlJv4_c-unsplash.jpg);
+  width: min(400px, 35vw);
+  height: 100svh;
+}
+
+aside > h1 {
+  font-family: Audiowide, sans-serif;
+  background-color: rgba(0, 0, 0, 0.55);
+  font-size: clamp(2rem, 2rem + 2.5vw, 5rem);
+  margin-top: max(30%, 30vh);
+  padding: .5rem 0rem;
+}
+
+aside > div {
+  font-size: calc(1.3rem + .1vw);
+  color: black;
+  padding: 2rem 0rem;
+}
+
+aside > div > a {
+  color: black;
 }
