@@ -31,12 +31,12 @@
         <section class="personal">
           <div>
             <label for="firstName">FIRST&ensp;NAME</label>
-            <input type="text" id="firstName" name="firstName" required>
+            <input type="text" id="firstName" name="firstName" required pattern="^[A-Za-z]{1,10}$">
             <div class="error">* Please use only letters</div>
           </div>
           <div>
             <label for="lastName">LAST&ensp;NAME</label>
-            <input type="text" id="lastName" name="lastName" required>
+            <input type="text" id="lastName" name="lastName" required pattern="^[A-Za-z]{1,10}$">
             <div class="error">* Please use only letters</div>
           </div>
         </section>
