@@ -158,3 +158,9 @@ label + input {
   color: rgb(77, 133, 255);
 }
 
+input:focus {
+  border: .2rem solid rgb(0, 0, 0);
+  border-radius: .3rem;
+  background: rgba(233, 240, 255, 0.25);
+}
+
