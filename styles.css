@@ -152,6 +152,11 @@ label + input {
   padding: 1rem 1.5rem;
 }
 
+button:hover {
+  transition: all .15s ease-in-out;
+  transform: scale(1.05);
+}
+
 .button p {
   font-size: clamp(1rem, 1rem + .15vw, 1.5rem);
   padding: 2rem 0 0 0;
