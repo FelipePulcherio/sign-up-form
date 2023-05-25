@@ -31,18 +31,18 @@
         <section class="personal">
           <div>
             <label for="firstName">FIRST&ensp;NAME</label>
-            <input type="text" id="firstName" name="firstName" placeholder=" " pattern="^[A-Za-z]{1,10}$" required>
+            <input type="text" id="firstName" name="firstName" placeholder=" " pattern="^[A-Za-z]{1,10}$">
             <div class="error">* Please use only letters</div>
           </div>
           <div>
             <label for="lastName">LAST&ensp;NAME</label>
-            <input type="text" id="lastName" name="lastName" placeholder=" " pattern="^[A-Za-z]{1,10}$" required>
+            <input type="text" id="lastName" name="lastName" placeholder=" " pattern="^[A-Za-z]{1,10}$">
             <div class="error">* Please use only letters</div>
           </div>
         </section>
         <section class="personal">
           <div>
-            <label for="user_email">E-MAIL</label>
+            <label for="user_email">E-MAIL&ensp;<span>*</span></label>
             <input type="email" id="user_email" name="email" placeholder=" " required>
             <div class="error">* Format: email@email.com</div>
           </div>
@@ -54,12 +54,12 @@
         </section>
         <section class="personal">
           <div>
-            <label for="user_password">PASSWORD</label>
+            <label for="user_password">PASSWORD&ensp;<span>*</span></label>
             <input type="password" id="user_password" name="password" placeholder=" " required>
             <div class="error">* Passwords do not match</div>
           </div>
           <div>
-            <label for="user_password">CONFIRM&ensp;PASSWORD</label>
+            <label for="user_password">CONFIRM&ensp;PASSWORD&ensp;<span>*</span></label>
             <input type="password" id="user_password" name="password" placeholder=" " required>
             <div class="error"></div>
           </div>
