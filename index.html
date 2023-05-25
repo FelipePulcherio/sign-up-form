@@ -28,7 +28,7 @@
     <main>
       <form>
         <h2>Let's do this!</h2>
-        <section>
+        <section class="personal">
           <div>
             <label for="firstName">FIRST&ensp;NAME</label>
             <input type="text" id="firstName" name="firstName">
@@ -40,7 +40,7 @@
             <div class="error">* Please use only letters</div>
           </div>
         </section>
-        <section>
+        <section class="personal">
           <div>
             <label for="user_email">E-MAIL</label>
             <input type="email" id="user_email" name="email">
@@ -52,10 +52,10 @@
             <div class="error">* Please use only numbers</div>
           </div>
         </section>
-        <section>
+        <section class="personal">
           <div>
             <label for="user_password">PASSWORD</label>
-            <input type="password" id="user_password" name="password">
+            <input type="password" id="user_password" name="password" required>
             <div class="error">* Passwords do not match</div>
           </div>
           <div>
@@ -64,13 +64,12 @@
             <div class="error"></div>
           </div>
         </section>
+        <div class="button">
+          <button type="submit">Create Account</button>
+          <p>Already have and account? <a href="">Log in</a></p>
+        </div>
       </form>
     </main>
-
-    <div class="button">
-      <button type="button">Create Account</button>
-    <p>Already have and account? <a href="">Log in</a></p>
-    </div>
 
 </body>
 </html>
