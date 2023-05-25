@@ -118,7 +118,8 @@ div > input {
 
 div > .error {
   margin-top: .15rem;
-  opacity: 1;
+  color: rgb(255, 0, 0);
+  opacity: 0;
 }
 
 label + input {
@@ -159,9 +160,44 @@ label + input {
   color: rgb(77, 133, 255);
 }
 
-input:focus {
-  border: .2rem solid rgb(0, 0, 0);
-  border-radius: .3rem;
-  background: rgba(233, 240, 255, 0.25);
-}
+input:not([type="submit"]) {
+  
+  &::placeholder {
+    color: rgba(128, 128, 128, 1);
+    opacity: 1;
+  }
 
+  &:focus::placeholder {
+    opacity: 1;
+  }
+
+  &:not(:focus):not(:placeholder-shown):valid {
+    // Not focused, not empty, valid value
+    display: block;
+    border: .2rem solid rgb(0, 200, 0);
+    border-radius: .2rem;
+  }
+
+  &:not(:focus):not(:placeholder-shown):invalid {
+    // Not focused, not empty, invalid value
+    display: block;
+    border: .2rem solid rgb(200, 0, 0);
+    border-radius: .2rem;
+  }
+
+  &:placeholder-shown:invalid:not(:focus),
+  &:placeholder-shown:valid:not(:focus),
+  &:focus {
+    // No success/error when empty or when focused
+    display: block;
+    border: .1rem solid rgb(128, 128, 128);
+    border-radius: .2rem;
+  }
+
+  &:focus, &:hover {
+    display: block;
+    border: .2rem solid rgb(0, 0, 0);
+    border-radius: .3rem;
+    background-color: rgba(233, 240, 255, 0.25);
+  }
+}
