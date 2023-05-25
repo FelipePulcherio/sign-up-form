@@ -38,8 +38,9 @@ aside > h1 {
   font-family: Audiowide, 'Trebuchet MS', sans-serif;
   background-color: rgba(0, 0, 0, 0.55);
   font-size: clamp(2rem, 2rem + 2.5vw, 5rem);
+  width: 100%;
   margin-top: max(30%, 30vh);
-  padding: .5rem 0rem;
+  padding: .8rem 0rem;
 }
 
 aside > div {
@@ -117,6 +118,8 @@ div > input {
 }
 
 div > .error {
+  font-size: clamp(1rem, 1rem + .08vw, 1.5rem);
+  line-height: clamp(1.4rem, 1.4rem + .08vw, 2.5rem);
   margin-top: .15rem;
   color: rgb(255, 0, 0);
   opacity: 0;
@@ -205,3 +208,5 @@ input:not([type="submit"]) {
     background-color: rgba(233, 240, 255, 0.25);
   }
 }
+
+/* ✓ 🗴 */
