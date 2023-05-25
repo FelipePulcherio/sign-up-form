@@ -73,7 +73,8 @@ header > p:last-child {
 
 main {
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 .6rem .6rem rgb(173, 178, 190);;
+  box-shadow: 0 .6rem .6rem rgb(173, 178, 190);
+  width: 100%;
 }
 
 form {
