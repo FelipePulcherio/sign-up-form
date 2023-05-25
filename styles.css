@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
-* {
+/** {
   border: solid black 1px;
-}
+}*/
 
 html {
   font-family: Michroma, 'Trebuchet MS', sans-serif;
@@ -35,7 +35,7 @@ aside {
 }
 
 aside > h1 {
-  font-family: Audiowide, sans-serif;
+  font-family: Audiowide, 'Trebuchet MS', sans-serif;
   background-color: rgba(0, 0, 0, 0.55);
   font-size: clamp(2rem, 2rem + 2.5vw, 5rem);
   margin-top: max(30%, 30vh);
@@ -126,8 +126,34 @@ label + input {
 }
 
 .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(233, 240, 255);
   margin-top: 3rem;
+}
+
+.button button {
+  font-family: Audiowide, 'Trebuchet MS', sans-serif;
+  background: center / cover no-repeat url(./images/andy-holmes-LUpDjlJv4_c-unsplash.jpg);
+  color: rgb(255, 255, 255);
+  font-size: calc(2rem + .1vw);
+  border-radius: 5px;
+  box-shadow: 0 .3rem .3rem rgb(173, 178, 190);
+  padding: 1rem 1.5rem;
+}
+
+.button p {
+  font-size: clamp(1rem, 1rem + .15vw, 1.5rem);
+  margin: 2rem 0 0 0;
+}
+
+.button > p > a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(77, 133, 255);
+
 }
 
 footer {
